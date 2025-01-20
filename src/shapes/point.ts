@@ -34,7 +34,9 @@ export class Point {
    * @returns la distance entre 2 points
    */
   public distanceFrom(point: Point) {
-    // Math.abs(2 * (this.x - point.x) + 2 * (this.y - point.y));
-    return 0;
+    return(Math.abs(
+      Math.sqrt(
+      (Math.pow(this.x - point.x,2)) + 
+      (Math.pow(this.y - point.y,2)))));    
   }
 }

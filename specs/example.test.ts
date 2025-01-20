@@ -16,7 +16,7 @@ describe("sum function", () => {
 
   test("adds -1 + 2 to equal 1", () => {
     paramA = -1;
-    expect(sum(paramA, paramB)).toBe(3);
+    expect(sum(paramA, paramB)).toBe(1);
   });
 
   test("1 + 2 should not be equal 4", () => {
@@ -29,7 +29,8 @@ describe("sum function", () => {
     expect(sum(paramB, paramA)).toBe(1);
   });
 
-  test.skip("null + NaN should be NaN", () => {
+  test("null + NaN should be NaN", () => {
     expect(sum(null as unknown as number, NaN)).toBe(NaN);
   });
 });
+
