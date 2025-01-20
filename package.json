@@ -4,10 +4,16 @@
   "description": "Installez les dépendances à l'aide de la commande `npm install`",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "author": "Aurélien VERNAY",
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
     "moduleDirectories": [
       "node_modules",
       "src"

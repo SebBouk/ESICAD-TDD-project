@@ -13,6 +13,12 @@ describe("sum function", () => {
   test("adds 1 + 2 to equal 3", () => {
     expect(sum(paramA, paramB)).toBe(3);
   });
+
+  test("adds -1 + 2 to equal 1", () => {
+    paramA = -1;
+    expect(sum(paramA, paramB)).toBe(3);
+  });
+
   test("1 + 2 should not be equal 4", () => {
     expect(sum(paramA, paramB)).not.toBe(4);
   });
